@@ -8,7 +8,7 @@ const fileReader = async (req, res) => {
 
     try {
         const invoice = await extractInvoiceFromFile(req.file);
-console.log('Extracted invoice data:', invoice);
+// console.log('Extracted invoice data:', invoice);
         return res.status(200).json({
             message: 'Invoice preview created. Please review and edit before saving.',
             invoice
